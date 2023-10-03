@@ -105,3 +105,52 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+
+.gradientbluepurple {
+  background: linear-gradient(90deg, rgba(107,0,202,1) 7%, rgba(60,218,162,1) 89%);
+  -webkit-background-clip: text; /* Propriedade para aplicar o gradiente ao texto */
+  color: transparent; /* Faz com que o texto seja transparente para mostrar o gradiente por trás */
+}
+
+.gradientbluepurplex{
+  background: rgb(107,0,202);
+  background: linear-gradient(90deg, rgba(107,0,202,1) 7%, rgba(60,218,162,1) 89%);
+  color: white;
+}
+
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(107,0,202,1) 7%, rgba(60,218,162,1) 89%);
+  border: 30px;
+  border-radius: 17px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 16px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}

@@ -1,56 +1,90 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { slideIn, staggerContainer, textVariant, planetVariants } from '../utils/motion';
+import{FaGithub, FaYoutube, FaLinkedin, FaInstagram} from 'react-icons/fa';
+import {TypeAnimation} from 'react-type-animation';
+import { fadeIn } from '../utils/motion';
+import Image from '../public/971.jpg';
+import styled, { keyframes } from 'styled-components';
+
+
+const floatAnimation = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+`;
+
+const FloatingElement = styled.div`
+  animation: ${floatAnimation} 6s ease-in-out infinite;
+`;
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
-    >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Slift.IO
-        </motion.h1>
-        <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
-        >
-          <h1 className={styles.heroHeadingG}>.</h1>
-        </motion.div>
-      </div>
-
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full md:-mt-[0px] -mt-[12px]"
-      >
-        <div className="absolute w-full h-[800px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
-
-        <img
-          src="/cover.png"
-          alt="hero_cover"
-          width="90"
-          height="90"
-          className="w-full sm:h-10% h-20% object-cover rounded-tl-[140px] z-10 relative"
-        />
-
-        <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img
-              src="/stamp.png"
-              alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
+  <section className='min-h-[85vh] lg:min-h-[85vh] flex items-center' id='home'>
+    <div className='container mx-auto'>
+      <div className='flex flex-col gapy-y-8 lg:flex-row lg:items-center lg:gap-12'>
+        {/* Text */}
+        <div className='flex-1 text-center font-secondary lg:text-left'>
+          <h1 className='text-white text-[55px] font-bold leading-[1.0] lg:text-[110px]'>
+            Slift<span>.io</span>
+          </h1>
+          <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold /*uppercase*/ leading-[1]'>
+            <span className='text-white mr-4'>Desenvolvimento de  </span>
+            <br/>
+            <TypeAnimation sequence={[
+              'Sistemas',
+              2000,
+              'Aplicações',
+              2000,
+              'Automações',
+              2000,
+              'Aplicativos',
+              2000
+            ]} 
+            speed={50}
+            className='gradientbluepurple'
+            wrapper='span'
+            repeat={Infinity}
             />
           </div>
-        </a>
-      </motion.div>
-    </motion.div>
+          <p className='mx-auto font-medium text-[24px] lg:mx-0 text-white'>
+            Transforme suas ideias em realidade digital! Avançe o progresso da sua empresa por meio  
+            de estratégias digitais.
+          </p>
+          <div className='flex max-w-max gap-x-10 mt-10 items-center mb-12 mx-auto lg:mx-0'>
+            <button className='button-63 font-medium'>Orçamento</button>
+            <a href='#' className='text-gradient btn-link text-white font-medium'>
+              Entrar em Contato
+            </a>
+          </div>
+          {/* Socials */}
+          <div className='text-white flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+            <a href="#">
+              <FaGithub/>
+            </a>
+            <a href="#">
+              <FaYoutube/>
+            </a>
+            <a href="#">
+              <FaLinkedin/>
+            </a>
+            <a href="#">
+              <FaInstagram/>
+            </a>
+          </div>
+        </div>
+        {/* Image */}
+        <FloatingElement>
+          <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[502px]'>
+              <img src="/codeimage4.png" className='animate-float'/>
+          </div>
+        </FloatingElement>
+      </div>
+    </div>
   </section>
 );
 

@@ -2,7 +2,7 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/planet-01.jpga',
-    title: 'Desenvolvimento Web',
+    title: 'Criação Web',
     description: 'Criação de sites e interativos usando backend e frontend visando a escalabilidade e o sucesso do seu negócio.',
   },
   {
@@ -20,7 +20,7 @@ export const exploreWorlds = [
   {
     id: 'world-4',
     imgUrl: '/planet-04.jpga',
-    title: 'Desenvolvimento Mobile',
+    title: 'Aplicação Mobile',
     description: 'Criação de aplicativos para a experiências acessível do usuário e dos membros da empresa.',
   },
   {
