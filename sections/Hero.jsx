@@ -15,12 +15,12 @@ const floatAnimation = keyframes`
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 `;
 
 const FloatingElement = styled.div`
-  animation: ${floatAnimation} 6s ease-in-out infinite;
+  animation: ${floatAnimation} 5s ease-in-out infinite;
 `;
 
 const Hero = () => (
@@ -38,7 +38,7 @@ const Hero = () => (
             <TypeAnimation sequence={[
               'Sistemas',
               2000,
-              'Aplicações',
+              'Aplicações Web',
               2000,
               'Automações',
               2000,
