@@ -54,23 +54,23 @@ export const newFeatures = [
 
 export const insights = [
   {
-    imgUrl: '/planet-06.png',
-    title: 'SisEvent: Sistema de Gerenciamento de Eventos',
+    imgUrl: '/PortalDoAlunoMatheusAndreozzi.png',
+    title: 'Portal Do Aluno: Studio Musical Matheus Andreozzi',
     subtitle:
-        'Desenvolvimento de um sistema para facilitar a organização e gestão de eventos corporativos, otimizando o processo e aumentando a eficiência.',
+        'É uma plataforma desenvolvida em C# e ASP.NET que tem como objetivo levar a experiência da escola de música Matheus Andreozzi diretamente para os alunos.',
   },
   {
-    imgUrl: '/planet-07.png',
-    title: 'MobiFit: Aplicativo de Fitness Personalizado',
+    imgUrl: '/EmpregosGoianiaERegiao.png',
+    title: 'Site Sistema de Vagas: Empregos Goiânia e Região',
     subtitle:
-        'Criação de um aplicativo intuitivo de fitness que personaliza treinos e dietas, proporcionando uma experiência única e eficaz para os usuários.',
+        'Criação de uma aplicação web de vagas personalizadas, proporcionando uma experiência única e eficaz para os usuários que vem do Instagram e mecanismos de pesquisa.',
   },
-  {
+  /*{
     imgUrl: '/planet-08.png',
     title: 'EducaKids: Plataforma Educacional Interativa',
     subtitle:
         'Desenvolvimento de uma plataforma educacional interativa, oferecendo um ambiente de aprendizagem envolvente e eficaz para crianças em idade escolar.',
-  },
+  },*/
 ];
 
 export const socials = [

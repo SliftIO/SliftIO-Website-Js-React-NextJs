@@ -35,13 +35,13 @@
 
 .gradient-02 {
   position: absolute;
-  width: 200px;
-  height: 438px;
-  top: 0px;
-  right: 0px;
-
-  background: #7aebfb;
-  filter: blur(190px);
+  width: 404px;
+  height: 800px;
+  right: 0;
+  top: 5%;
+  background: rgb(122 235 251 / 13%);
+  filter: blur(135px);
+  transform: rotate(-114.2deg);
 }
 
 .glassmorphism {
@@ -61,6 +61,17 @@
 
   background: rgba(149, 66, 232, 0.35);
   filter: blur(175px);
+  transform: rotate(-114.2deg);
+}
+
+.gradient-33 {
+  position: absolute;
+  width: 404px;
+  height: 800px;
+  right: 0;
+  top: 5%;
+  background: rgb(122 235 251 / 38%);
+  filter: blur(135px);
   transform: rotate(-114.2deg);
 }
 
@@ -101,7 +112,7 @@
   height: 100px;
   left: 37%;
   bottom: 0;
-
+  transform: rotate(45deg);
   background: #65c4fa;
   filter: blur(150px);
 }

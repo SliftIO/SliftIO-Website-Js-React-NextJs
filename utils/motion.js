@@ -10,7 +10,7 @@ export const navVariants = {
   },
   show: {
     opacity: 1,
-    y: 0,
+    y: 3.84,
     transition: {
       type: 'spring',
       stiffness: 80,
